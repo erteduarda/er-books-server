@@ -4,6 +4,7 @@ const { getLivros, getLivro, postLivro, patchLivro, deletarLivro } = require("..
 const router = Router()
 
 router.get("/", getLivros)
+
 router.get("/:id", getLivro)
 
 router.post("/", postLivro)
@@ -11,6 +12,5 @@ router.post("/", postLivro)
 router.patch("/:id", patchLivro)
 
 router.delete("/:id", deletarLivro)
-
 
 module.exports = router
